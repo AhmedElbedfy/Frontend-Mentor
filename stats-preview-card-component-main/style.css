@@ -1,0 +1,194 @@
+body {
+    background-color: #0a0c1b;
+    color: hsl(0, 0%, 100%);
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    width: 1100px;
+    font-family: "Inter", sans-serif;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 {
+    margin: 1.3rem 6rem 2.5rem 4rem;
+    width: 50%;
+}
+
+.section2 {
+    position: relative;
+    width: 50%;
+    height: 446px;
+}
+
+.card-image {
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.after {
+    background-color: #7411b3;
+    z-index: 99;
+    opacity: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.highlight {
+    color: hsl(277, 64%, 61%);
+}
+
+.card-title {
+    font-size: 36px;
+}
+
+/* 
+    Info Section
+  */
+
+.info {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    margin: 1.5rem 0 3rem;
+}
+
+/* 
+    State Section
+  */
+
+.card-states {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-state {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 7px;
+}
+
+.card-state-about {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+/* 
+    Footer Section
+  */
+
+.attribution {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 375px) {
+    .card {
+        width: unset;
+        margin: 1rem;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column-reverse;
+        width: unset;
+        text-align: center;
+    }
+
+    .section1 {
+        margin: 0;
+        margin-top: 1.7rem;
+        width: 260px;
+    }
+
+    .section2 {
+        position: relative;
+        width: unset;
+        height: fit-content;
+        height: 283px;
+    }
+
+    .card-image {
+        height: unset;
+        width: 100%;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 10px;
+    }
+
+    .after {
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 10px;
+        
+    }
+
+    .highlight {
+        color: hsl(277, 64%, 61%);
+    }
+
+    .card-title {
+        font-size: 24px;
+        width: 230px;
+    }
+
+    /* 
+    Info Section
+  */
+
+    .info {
+        color: hsla(0, 0%, 100%, 0.75);
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 26px;
+        margin: 1.5rem 0 3rem;
+    }
+
+    /* 
+    State Section
+  */
+
+    .card-states {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-state-container {
+        margin-bottom: 2rem;
+    }
+
+    .card-state {
+        font-size: 24px;
+        margin-bottom: 7px;
+    }
+
+    .card-state-about {
+        font-size: 11px;
+    }
+}
