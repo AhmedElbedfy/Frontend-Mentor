@@ -10,6 +10,7 @@ body {
     font-family: "Space Mono", monospace;
     text-align: center;
     margin: 0;
+    height: 100vh;
 }
 
 .flex {
@@ -18,12 +19,7 @@ body {
     align-items: center;
 }
 
-.title {
-    text-transform: uppercase;
-    color: hsl(186, 14%, 43%);
-    letter-spacing: 0.9rem;
-    font-size: 24px;
-    font-weight: bold;
+.logo {
     margin: 8rem 0 4rem;
 }
 
@@ -161,7 +157,7 @@ input[type="number"] {
     width: 100%;
     outline: none;
     text-align: right;
-    
+
     /* refrence --> https://stackoverflow.com/questions/6586302/add-padding-to-html-text-input-field */
     padding-right: 5px;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -254,7 +250,7 @@ input[type="number"] {
 }
 
 @media screen and (max-width: 660px) {
-    .title {
+    .logo {
         margin: 2rem 0;
     }
 
