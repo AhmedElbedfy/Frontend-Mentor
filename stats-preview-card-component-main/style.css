@@ -95,28 +95,13 @@ body {
     letter-spacing: 1.2px;
 }
 
-/* 
-    Footer Section
-  */
-
-.attribution {
-    position: absolute;
-    bottom: 5px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
-
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 1200px) {
+    body {
+        height: unset;
+    }
     .card {
         width: unset;
-        margin: 1rem;
-        margin-bottom: 3rem;
+        margin: 3rem 1rem;
         display: flex;
         flex-direction: column-reverse;
         width: unset;
@@ -131,9 +116,8 @@ body {
 
     .section2 {
         position: relative;
-        width: unset;
+        width: fit-content;
         height: fit-content;
-        height: 283px;
     }
 
     .card-image {
@@ -146,7 +130,6 @@ body {
     .after {
         border-bottom-right-radius: 0;
         border-top-left-radius: 10px;
-        
     }
 
     .highlight {
