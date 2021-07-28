@@ -1,0 +1,280 @@
+/* - Very dark cyan: hsl(183, 100%, 15%)
+- Dark grayish cyan: hsl(186, 14%, 43%)
+- Dark grayish cyan: hsl(184, 14%, 56%)
+- Light grayish cyan: hsl(185, 41%, 84%)
+- Light grayish cyan: hsl(189, 41%, 97%)
+- White: hsl(0, 0%, 100%) */
+
+body {
+    background-color: #c5e4e7;
+    font-family: "Space Mono", monospace;
+    text-align: center;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    text-transform: uppercase;
+    color: hsl(186, 14%, 43%);
+    letter-spacing: 0.9rem;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 8rem 0 4rem;
+}
+
+main {
+    margin: 0 auto;
+    background-color: #ffff;
+    border-radius: 16px;
+    width: 960px;
+}
+
+.container {
+    display: flex;
+}
+
+/* Option Container */
+.option-container {
+    width: 50%;
+    padding: 2rem;
+}
+
+.option {
+    margin: 2rem 0;
+}
+
+.option-title {
+    color: hsl(186, 14%, 43%);
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+/* for removing the up and down arroe in the input type number */
+/* ref --> https://stackoverflow.com/questions/26024771/styling-an-input-type-number */
+/* Chrome */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Mozila */
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0;
+}
+
+.number-wrapper input[type="number"] {
+    background-color: #f3f8fb;
+    border: none;
+    border-radius: 7px;
+    width: 100%;
+    /* height: 36px; */
+    font-size: 24px;
+    position: relative;
+    text-align: right;
+    padding: 10px;
+    color: #00474b;
+    font-weight: bold;
+    font-family: inherit;
+    outline: none;
+}
+
+.number-wrapper {
+    position: relative;
+}
+
+.number-wrapper::after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: transparent url(images/icon-dollar.svg) no-repeat;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+}
+
+#number-or-people::after {
+    background: transparent url(images/icon-person.svg) no-repeat;
+}
+
+.tip-container {
+    display: grid;
+    gap: 0.8rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tip {
+    padding: 7px 0;
+    border-radius: 8px;
+    /* align */
+    text-align: center;
+    /* color */
+    background-color: #00474b;
+    color: #fff;
+    /* font */
+    font-weight: bold;
+    font-size: 24px;
+    font-family: "Space Mono", monospace;
+    border: none;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.active-tip {
+    background-color: #22c3ae;
+    color: #00474b;
+}
+
+#custom-wrapper {
+    position: relative;
+}
+
+#custom-label {
+    padding: 7px 0;
+    background-color: #f3f8fb;
+    color: #66807d;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    /* align */
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    width: 100%;
+    border: 1px solid #f3f8fb;
+}
+
+#custom {
+    background-color: #f3f8fb;
+    color: #00474b;
+    width: 100%;
+    outline: none;
+    text-align: right;
+    
+    /* refrence --> https://stackoverflow.com/questions/6586302/add-padding-to-html-text-input-field */
+    padding-right: 5px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+#custom:focus {
+    border: 2px solid hsl(172, 70%, 45%);
+}
+
+#custom:focus + #custom-label {
+    opacity: 0;
+}
+
+.warning {
+    color: rgb(201, 9, 9);
+    display: none;
+}
+
+/* Result Container */
+.result-container {
+    width: 50%;
+    background-color: #00474b;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 2rem;
+}
+
+.left .subtitle {
+    color: hsl(185, 41%, 84%);
+}
+
+.result-title {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.right {
+    color: hsl(172, 70%, 45%);
+    font-size: 42px;
+    font-weight: bold;
+}
+
+#reset {
+    background-color: hsl(172, 70%, 45%);
+    color: #00474b;
+    font-size: 20px;
+    font-family: inherit;
+    padding: 10px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+#reset:disabled {
+    background-color: #146569;
+}
+
+@media screen and (max-width: 1050px) {
+    main {
+        width: 620px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .option-container {
+        width: unset;
+    }
+
+    .result-container {
+        width: unset;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .title {
+        margin: 2rem 0;
+    }
+
+    main {
+        width: unset;
+    }
+
+    .tip-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .right {
+        font-size: 32px;
+    }
+
+    .option-container {
+        padding-bottom: 0;
+    }
+
+    .result-container {
+        margin-top: 0;
+    }
+}
