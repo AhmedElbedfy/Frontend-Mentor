@@ -91,12 +91,11 @@ function getResult(bill, tipPercent, nOfP) {
 
 
 function updateCustomButton(customTipValue) {
-    console.log(customTipValue)
     if (customTipValue >= 0 || customTipValue === "") {
-        customLabel.style.opacity = 0;
+        customLabel.style.display = "none";
         customInput.style.borderColor = "hsl(172, 70%, 45%)";
     } else if (customTipValue < 0) {
-        customLabel.style.opacity = "100%";
+        customLabel.style.display = "block";
         customInput.style.borderColor = "#f3f8fb";
     }
 }
@@ -111,10 +110,10 @@ function handleTipButton(e) {
     // if the button isn't the custom remove the custom active class and the opposite
     if (e.target.id !== "custom") {
         customInput.value = ""
-        customLabel.style.opacity = "100%";
+        customLabel.style.display = "block";
         customInput.style.borderColor = "#f3f8fb";
     } else if (e.target.id === "custom") {
-        customLabel.style.opacity = 0;
+        customLabel.style.display = "none";
         customInput.style.borderColor = "hsl(172, 70%, 45%)";
     }
 
@@ -173,7 +172,7 @@ reset.addEventListener("click", () => {
     )
 
     customInput.value = ""
-    customLabel.style.opacity = "100%";
+    customLabel.style.display = "block";
     customInput.style.borderColor = "#f3f8fb";
 })
 

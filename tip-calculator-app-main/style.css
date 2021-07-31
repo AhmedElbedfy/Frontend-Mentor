@@ -157,7 +157,7 @@ input[type="number"] {
     width: 100%;
     outline: none;
     text-align: right;
-
+    cursor: text;
     /* refrence --> https://stackoverflow.com/questions/6586302/add-padding-to-html-text-input-field */
     padding-right: 5px;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
