@@ -3,7 +3,6 @@ body {
     font-family: "Kumbh Sans", sans-serif;
     background-color: hsl(185, 75%, 39%);
     color: hsl(229, 23%, 23%);
-    overflow: hidden;
 }
 
 main::before {
@@ -15,7 +14,6 @@ main::before {
     width: 978px;
     height: 978px;
     transform: translate(-85%, -70%);
-    overflow: hidden;
     z-index: -1;
 }
 
@@ -28,7 +26,6 @@ main::after {
     width: 978px;
     height: 978px;
     transform: translate(82%, 80%);
-    overflow: hidden;
     z-index: -1;
 }
 
@@ -44,6 +41,7 @@ main {
     box-shadow: 1px 5px 12px 0px rgba(0, 0, 0, 0.34);
     -webkit-box-shadow: 1px 5px 12px 0px rgba(0, 0, 0, 0.34);
     -moz-box-shadow: 1px 5px 12px 0px rgba(0, 0, 0, 0.34);
+    overflow: hidden;
 }
 
 .background {
