@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: "Kumbh Sans", sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    color: hsl(229, 23%, 23%);
+    overflow: hidden;
+}
+
+main::before {
+    content: " ";
+    background-image: url("images/bg-pattern-top.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 978px;
+    height: 978px;
+    transform: translate(-85%, -70%);
+    overflow: hidden;
+    z-index: -1;
+}
+
+main::after {
+    content: " ";
+    background-image: url("images/bg-pattern-bottom.svg");
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 978px;
+    height: 978px;
+    transform: translate(82%, 80%);
+    overflow: hidden;
+    z-index: -1;
+}
+
+main {
+    width: 350px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    z-index: 1;
+    box-shadow: 1px 5px 12px 0px rgba(0, 0, 0, 0.34);
+    -webkit-box-shadow: 1px 5px 12px 0px rgba(0, 0, 0, 0.34);
+    -moz-box-shadow: 1px 5px 12px 0px rgba(0, 0, 0, 0.34);
+}
+
+.background {
+    background: url("images/bg-pattern-card.svg");
+    width: 350px;
+    height: 140px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* Card Middle Section */
+
+.user-image {
+    border: 5px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.user-info {
+    background-color: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5rem 0 0.8rem;
+}
+
+.username .num {
+    font-weight: normal;
+    margin-left: 5px;
+    color: hsl(227, 10%, 46%);
+}
+
+.city {
+    color: hsl(227, 10%, 46%);
+    margin-bottom: 2rem;
+    font-size: 14px;
+}
+
+/* Card Bottom Section */
+
+.bottom {
+    border-top: 1px solid #e7e7e7;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.4rem 0;
+}
+
+.info-section {
+    text-align: center;
+}
+
+.number {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.number-title {
+    margin-top: 5px;
+    color: hsl(227, 10%, 46%);
+    font-size: 12px;
+    letter-spacing: 1px;
+}
