@@ -71,6 +71,10 @@ main {
     text-align: center;
 }
 
+h1 {
+    margin: 0;
+}
+
 .username {
     font-weight: bold;
     font-size: 18px;
