@@ -232,6 +232,7 @@ TODO NEW-ARTICLES SECTION
     .hero__title {
         width: 250px;
         font-weight: 800;
+        font-size: 48px;
     }
 
     .hero__content__right {
