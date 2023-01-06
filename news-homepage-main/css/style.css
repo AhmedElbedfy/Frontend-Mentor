@@ -1,0 +1,307 @@
+/* todo here I will define my General value like */
+/* todo I will work mobile first */
+
+:root {
+    /* * Primary colors */
+    --primary-color-1: hsl(35, 77%, 62%);
+    --primary-color-2: hsl(5, 85%, 63%);
+    /* * Neutral colors */
+    --neutral-color-1: hsl(36, 100%, 99%);
+    --neutral-color-2: hsl(233, 8%, 79%);
+    --neutral-color-3: hsl(236, 13%, 42%);
+    --neutral-color-4: hsl(240, 100%, 5%);
+}
+
+body {
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    display: f;
+}
+
+/* 
+TODO UNIVERSAL CLASSES 
+*/
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+@media only screen and (min-width: 375px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .container {
+        width: 75%;
+    }
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* 
+TODO START NAVBAR
+*/
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 2rem 1rem;
+    -o-transition: display 2s;
+    -webkit-transition: display 2s;
+    -moz-transition: display 2s;
+    -ms-transition: display 2s;
+    transition: display 2s;
+}
+
+/* #open-mobile-menu {
+    
+} */
+
+#close-mobile-menu {
+    display: none;
+    z-index: 100;
+}
+
+.nav__list {
+    position: fixed;
+    background-color: var(--neutral-color-1);
+    height: 100vh;
+    right: 0;
+    top: 0;
+    width: 55%;
+    list-style-type: none;
+    margin: 0;
+    padding-top: 10rem;
+    display: none;
+}
+
+.nav__list::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(0, 0%, 0%, 0.6);
+    z-index: 1;
+}
+
+.nav__list-item {
+    margin-bottom: 1.6rem;
+}
+
+.nav__link-item {
+    color: var(--neutral-color-4);
+    text-decoration: none;
+}
+
+.nav__link-item:hover {
+    color: var(--primary-color-1);
+}
+
+/* Desktop Style Breakpoint */
+
+@media only screen and (min-width: 375px) {
+    #open-mobile-menu {
+        display: none;
+    }
+
+    .nav__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        height: unset;
+        width: unset;
+        padding-top: 2rem;
+    }
+
+    .nav__list::before {
+        content: unset;
+    }
+
+    .nav__list-item {
+        margin-left: 2.6rem;
+    }
+
+    .nav__link-item {
+        color: var(--neutral-color-3);
+    }
+}
+
+/* 
+TODO START HERO SECTION
+*/
+
+.hero__image {
+    width: 100%;
+}
+
+.hero__title {
+    font-size: 40px;
+    color: var(--neutral-color-4);
+    font-weight: 700;
+}
+
+.hero__description {
+    color: var(--neutral-color-3);
+    line-height: 1.6rem;
+    margin-bottom: 1.8rem;
+}
+
+.hero__button {
+    background-color: var(--primary-color-2);
+    color: var(--neutral-color-1);
+    outline: 0;
+    border: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    letter-spacing: 4px;
+}
+
+.hero__button:hover {
+    background-color: var(--neutral-color-4);
+}
+
+/* 
+TODO NEW-ARTICLES SECTION 
+*/
+
+.hero__new-articles {
+    margin: 4rem 0;
+    background-color: var(--neutral-color-4);
+    color: var(--neutral-color-1);
+    padding: 1rem;
+}
+
+.new-articles__title {
+    margin: 0.5rem 0 1.5rem;
+    color: var(--primary-color-1);
+}
+
+.new-articles__article-title {
+    margin-bottom: 0.6rem;
+    font-size: 18px;
+}
+
+.new-articles__article-title:hover {
+    color: var(--primary-color-1);
+}
+
+.new-articles__article-description {
+    margin: 0;
+    color: var(--neutral-color-2);
+    line-height: 1.6rem;
+}
+
+.new-articles__container {
+    border-bottom: 1px solid var(--neutral-color-3);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.new-articles__container:last-child {
+    border-bottom: unset;
+    padding-bottom: 0.8rem;
+    margin-bottom: 0;
+}
+
+/* Desktop Style Breakpoint */
+
+@media only screen and (min-width: 375px) {
+    .hero {
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .hero__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hero__title {
+        width: 250px;
+        font-weight: 800;
+    }
+
+    .hero__content__right {
+        width: 50%;
+    }
+
+    .hero__new-articles {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* 
+TODO ARTICLES SECTION
+*/
+
+.articles {
+    margin-bottom: 4rem;
+}
+
+.articles__item {
+    display: flex;
+    margin-bottom: 2.2rem;
+}
+
+.articles__item-img {
+    width: 30%;
+    margin-right: 1.2rem;
+}
+
+.articles__item-hash {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--neutral-color-2);
+}
+
+.articles__item-title {
+    margin: 0.7rem 0;
+}
+
+.articles__item-title:hover {
+    margin: 0.7rem 0;
+    color: var(--primary-color-1);
+}
+
+.articles__item-description {
+    color: var(--neutral-color-3);
+    margin: 0;
+    line-height: 1.5rem;
+}
+
+@media only screen and (min-width: 375px) {
+    .articles {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .articles__item {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .articles {
+        flex-wrap: nowrap;
+    }
+}
