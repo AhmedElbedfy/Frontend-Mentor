@@ -23,8 +23,8 @@
 </head>
 
 <body>
-
-  <!--
+  <main>
+    <!--
     TODO    WORKING IN BEM WAY
     TODO    BLOCK    ELEMENT      MODIFIER
     TODO    NAV      NAV__ICON    LINK--ACTIVE
@@ -34,46 +34,46 @@
     ?    NAV__LOGO  NAV__TOGGLEICON  NAV__LIST
   -->
 
-  <!-- 
+    <!-- 
     * NAV START
   -->
 
-  <nav class="nav container">
-    <div class="nav__logo">
-      <a href="#" class="nav__logo-link">
+    <nav class="nav container">
+      <div class="nav__logo">
+        <a href="#" class="nav__logo-link">
 
-        <img src="assets/images/logo.svg" alt="logo">
-      </a>
-    </div>
+          <img src="assets/images/logo.svg" alt="logo">
+        </a>
+      </div>
 
-    <div id="open-mobile-menu">
-      <img src="assets/images/icon-menu.svg" alt="menu">
-    </div>
-    <div id="close-mobile-menu">
-      <img src="assets/images/icon-menu-close.svg" alt="close menu">
-    </div>
+      <div id="open-mobile-menu">
+        <img src="assets/images/icon-menu.svg" alt="menu">
+      </div>
+      <div id="close-mobile-menu">
+        <img src="assets/images/icon-menu-close.svg" alt="close menu">
+      </div>
 
-    <ul id="nav__list" class="nav__list">
+      <ul id="nav__list" class="nav__list">
 
-      <li class="nav__list-item">
-        <a href="#" class="nav__link-item">Home</a>
-      </li>
-      <li class="nav__list-item">
-        <a href="#" class="nav__link-item">New</a>
-      </li>
-      <li class="nav__list-item">
-        <a href="#" class="nav__link-item">Popular</a>
-      </li>
-      <li class="nav__list-item">
-        <a href="#" class="nav__link-item">Trending</a>
-      </li>
-      <li class="nav__list-item">
-        <a href="#" class="nav__link-item">Categories</a>
-      </li>
-    </ul>
-  </nav>
+        <li class="nav__list-item">
+          <a href="#" class="nav__link-item">Home</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__link-item">New</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__link-item">Popular</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__link-item">Trending</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__link-item">Categories</a>
+        </li>
+      </ul>
+    </nav>
 
-  <!-- 
+    <!-- 
     TODO HERO SECTION
 
     ? HERO CONTAINER
@@ -84,58 +84,59 @@
 
     * HERO SECTION START
    -->
-  <section class="hero container">
-    <div class="hero__left">
-      <picture>
-        <source media="(max-width: 376px)" srcset="assets/images/image-web-3-mobile.jpg">
-        <source media="(min-width: 375px)" srcset="assets/images/image-web-3-desktop.jpg">
-        <img class="hero__image" src="assets/images/image-web-3-mobile.jpg" alt="">
-      </picture>
+    <section class="hero container">
+      <div class="hero__left">
+        <picture>
+          <source media="(max-width: 376px)" srcset="assets/images/image-web-3-mobile.jpg">
+          <source media="(min-width: 375px)" srcset="assets/images/image-web-3-desktop.jpg">
+          <img class="hero__image" src="assets/images/image-web-3-mobile.jpg" alt="">
+        </picture>
 
-      <div class="hero__content">
-        <h1 class="hero__title">
-          The Bright Future of Web 3.0?
-        </h1>
-        <div class="hero__content__right">
-          <p class="hero__description">
-            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands
-            of
-            the
-            people.
-            But is it really fulfilling its promise?
-          </p>
-          <button class="hero__button cursor">Read more</button>
+        <div class="hero__content">
+          <h1 class="hero__title">
+            The Bright Future of Web 3.0?
+          </h1>
+          <div class="hero__content__right">
+            <p class="hero__description">
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the
+              hands
+              of
+              the
+              people.
+              But is it really fulfilling its promise?
+            </p>
+            <button class="hero__button cursor">Read more</button>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="hero__new-articles">
-      <!-- 
+      <div class="hero__new-articles">
+        <!-- 
             ? h1.new-articles__title   new-articles__article-title new-articles__article-description
           * start new articles
           -->
-      <h1 class="new-articles__title">New</h1>
-      <!-- * start new articles content -->
-      <div class="new-articles__container">
-        <h2 class="new-articles__article-title cursor">Hydrogen VS Electric Cars</h2>
-        <p class="new-articles__article-description"> Will hydrogen-fueled cars ever catch up to EVs?</p>
-      </div>
+        <h1 class="new-articles__title">New</h1>
+        <!-- * start new articles content -->
+        <div class="new-articles__container">
+          <h2 class="new-articles__article-title cursor">Hydrogen VS Electric Cars</h2>
+          <p class="new-articles__article-description"> Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
 
-      <div class="new-articles__container">
+        <div class="new-articles__container">
 
-        <h2 class="new-articles__article-title cursor">The Downsides of AI Artistry</h2>
-        <p class="new-articles__article-description">What are the possible adverse effects of on-demand AI image
-          generation?</p>
-      </div>
+          <h2 class="new-articles__article-title cursor">The Downsides of AI Artistry</h2>
+          <p class="new-articles__article-description">What are the possible adverse effects of on-demand AI image
+            generation?</p>
+        </div>
 
-      <div class="new-articles__container">
-        <h2 class="new-articles__article-title cursor">Is VC Funding Drying Up?</h2>
-        <p class="new-articles__article-description">Private funding by VC firms is down 50% YOY. We take a look at
-          what
-          that means.</p>
+        <div class="new-articles__container">
+          <h2 class="new-articles__article-title cursor">Is VC Funding Drying Up?</h2>
+          <p class="new-articles__article-description">Private funding by VC firms is down 50% YOY. We take a look at
+            what
+            that means.</p>
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- 
+    </section>
+    <!-- 
     TODO ARTICLES
 
     ? ARTICLES
@@ -146,39 +147,39 @@
     * ARTICLES START
   -->
 
-  <div class="articles container">
+    <div class="articles container">
 
-    <div class="articles__item">
-      <img src="assets/images/image-retro-pcs.jpg" alt="retro computer" class="articles__item-img">
-      <div>
-        <span class="articles__item-hash">01</span>
-        <h3 class="articles__item-title cursor">Reviving Retro PCs</h3>
-        <p class="articles__item-description">What happens when old PCs are given modern upgrades?</p>
+      <div class="articles__item">
+        <img src="assets/images/image-retro-pcs.jpg" alt="retro computer" class="articles__item-img">
+        <div>
+          <span class="articles__item-hash">01</span>
+          <h3 class="articles__item-title cursor">Reviving Retro PCs</h3>
+          <p class="articles__item-description">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+      <div class="articles__item">
+
+        <img src="assets/images/image-top-laptops.jpg" alt="top laptop" class="articles__item-img">
+        <div>
+          <span class="articles__item-hash">02</span>
+          <h3 class="articles__item-title cursor">Top 10 Laptops of 2022</h3>
+          <p class="articles__item-description">Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+      <div class="articles__item">
+        <img src="assets/images/image-gaming-growth.jpg" alt="gaming growth" class="articles__item-img">
+        <div>
+          <span class="articles__item-hash">03</span>
+          <h3 class="articles__item-title cursor">The Growth of Gaming</h3>
+          <p class="articles__item-description">How the pandemic has sparked fresh opportunities.</p>
+        </div>
       </div>
     </div>
-    <div class="articles__item">
 
-      <img src="assets/images/image-top-laptops.jpg" alt="top laptop" class="articles__item-img">
-      <div>
-        <span class="articles__item-hash">02</span>
-        <h3 class="articles__item-title cursor">Top 10 Laptops of 2022</h3>
-        <p class="articles__item-description">Our best picks for various needs and budgets.</p>
-      </div>
-    </div>
-    <div class="articles__item">
-      <img src="assets/images/image-gaming-growth.jpg" alt="gaming growth" class="articles__item-img">
-      <div>
-        <span class="articles__item-hash">03</span>
-        <h3 class="articles__item-title cursor">The Growth of Gaming</h3>
-        <p class="articles__item-description">How the pandemic has sparked fresh opportunities.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- 
+    <!-- 
     * Scripts
    -->
-
+  </main>
   <script src="javascript/index.js"></script>
 
 </body>
