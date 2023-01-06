@@ -108,7 +108,7 @@ TODO START NAVBAR
 
 /* Desktop Style Breakpoint */
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 426px) {
     #open-mobile-menu {
         display: none;
     }
@@ -216,7 +216,7 @@ TODO NEW-ARTICLES SECTION
 
 /* Desktop Style Breakpoint */
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 426px) {
     .hero {
         display: flex;
         gap: 1.5rem;
@@ -289,7 +289,7 @@ TODO ARTICLES SECTION
     line-height: 1.5rem;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 426px) {
     .articles {
         display: flex;
         flex-wrap: wrap;
