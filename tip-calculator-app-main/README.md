@@ -71,6 +71,5 @@ Element.addEventListener("input", fun());
 
 ## Author
 
-- Frontend Mentor - [@ahmedelbedfy](https://www.frontendmentor.io/profile/ahmedelbedfy)
 - Twitter - [@ahmedelbedfy](https://www.twitter.com/ahmedelbedfy)
 - LinkedIn - [Ahmed Khaled](https://www.linkedin.com/in/ahmedelbedfy/)
